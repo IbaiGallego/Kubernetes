@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sample-node-app
 spec:
-  container:
+  containers:
     - name: sample-node-app
       image: saurabh2106/sample-node-app
       ports:
