@@ -1,3 +1,5 @@
+## Pods
+
 ### Download the .yml to the VM
 ```
 git clone "link"
@@ -17,4 +19,21 @@ kubectl logs sample-node-app
 ### Details about pod
 ```
 kubectl describe pod sample-node-app
+```
+
+### Delete pod
+```
+kubectl delete name
+```
+
+### Run and connect to the pod
+```
+kubectl exec -it sample-node-app sh
+```
+
+## Replica Sets
+
+### Get replica set
+```
+kubectl get rs
 ```

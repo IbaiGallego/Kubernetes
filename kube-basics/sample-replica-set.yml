@@ -1,0 +1,22 @@
+apiVerison: apps/v1
+kind: ReplicaSet
+metadata:
+  name: sample-node-app-rs
+  labels:
+    app: sample-node-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      aoo: sample-node-app
+  template:
+    metadata: 
+      name: sample-node-app
+      labels:
+        app: sample-node-app
+  spec:
+    containers:
+      - name: sample-node-app
+        image: saurabh2106/sample-node-app
+        ports:
+          - containerPort: 3000
